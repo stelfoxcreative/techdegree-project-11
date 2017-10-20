@@ -66,15 +66,9 @@ class Results extends Component {
     return (
       <div className="photo-container">
       {
-        // If the app is loading the display the flickr loading animation
+        // Let the user know if the app is loading the results
         (this.state.loading && this.props.query !=='')
-        ? <div className="lds-css ng-scope">
-        <div className="lds-flickr">
-        <div></div>
-        <div></div>
-        <div></div>
-        </div>
-        </div>
+        ? <p>Loading...</p>
         // If the app is not loading, then display the results
         : <GifList data={this.state.gifs} query={this.state.search}/>
       }
