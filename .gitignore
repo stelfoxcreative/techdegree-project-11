@@ -1,0 +1,2 @@
+#Exclude files to upload to GitHub, be sure to replace Config file with your own for testing :)
+src/Config.js
